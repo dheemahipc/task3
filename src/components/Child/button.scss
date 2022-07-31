@@ -1,0 +1,42 @@
+button {
+  width: 150px;
+  padding: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+transition: transform .3s;
+@media (max-width:520px) {
+      width: 20vw;
+    }
+  &:hover{
+      transform: scale(.9);
+  }
+  &:nth-child(1) {
+    background-color: rgb(186, 182, 182);
+    font-size: 2rem;
+    color: black;
+    font-weight: 900;
+  }
+  &:nth-child(2) {
+    background-color: grey;
+  }
+  &:nth-child(3),
+  &:nth-child(4),
+  &:nth-child(8),
+  &:nth-child(12) {
+    background: grey;
+  }
+  &:nth-child(19) {
+    background: grey;
+  }
+  &:nth-child(16) {
+    grid-row: 4 / span 2;
+    grid-column: 4;
+    background-color: gray;
+    color: white;
+  }
+}
